@@ -38,7 +38,9 @@ The test suite runs actual PostgreSQL, including disposable databases for writes
 
 ## Deploy on Vercel
 
-Import the repository into Vercel, use the Next.js preset, run `npm run build`, and set the output directory to `out`. The included `vercel.json` records these settings. No environment variables or external database are needed. This project is prepared for deployment; local development does not publish it automatically.
+Import the repository into Vercel, use the Next.js preset, and run `npm run build`. Vercel's Next.js adapter must use `.next` as its Output Directory so it can read the build manifests; it detects `output: "export"` and handles the exported static assets automatically. The included `vercel.json` explicitly sets `.next`, overriding an old `out` project setting. No environment variables or external database are needed. This project is prepared for deployment; local development does not publish it automatically.
+
+If a deployment fails with `NEXT_NO_ROUTES_MANIFEST` and a path ending in `out/routes-manifest.json`, deploy the latest commit and check Settings → Build and Deployment: Framework Preset should be Next.js, Build Command should be `npm run build`, and Output Directory should be the Next.js default (`.next`), not `out`. The `out/` directory is the portable export used by the local static server and generic static hosts, not the build-manifest directory used by Vercel's Next.js adapter.
 
 Any static host supporting directory indexes can serve `out/`. Serve `.wasm` as `application/wasm` and `.js`/`.mjs` as JavaScript. Do not rewrite missing asset requests to HTML. Host at the domain root: worker and WASM paths are root-relative. `trailingSlash: true` produces an `index.html` per route.
 
