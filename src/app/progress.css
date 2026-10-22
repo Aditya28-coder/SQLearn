@@ -1,0 +1,522 @@
+.progress-home .progress-welcome {
+  min-height: 260px;
+  padding: 25px 30px;
+  grid-template-columns: 1.4fr 1fr;
+}
+.progress-welcome .welcome-copy h2 {
+  font-size: 27px;
+  line-height: 1.2;
+  max-width: 390px;
+}
+.progress-welcome .welcome-copy > p {
+  margin: 8px 0 14px;
+}
+.progress-welcome .welcome-copy .button {
+  margin-top: 0;
+}
+.progress-welcome .level-progress p {
+  margin-top: 0;
+}
+.progress-welcome .table-garden {
+  max-height: 220px;
+}
+.progress-welcome .welcome-kicker {
+  font-size: 10px;
+  letter-spacing: 1.1px;
+}
+.level-progress {
+  margin-top: 19px;
+  max-width: 430px;
+}
+.level-progress > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+.level-progress progress {
+  display: block;
+  appearance: none;
+  border: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 8px 0;
+  background: var(--surface);
+  color: var(--accent);
+}
+.level-progress progress::-webkit-progress-bar {
+  background: var(--surface);
+  border-radius: 10px;
+}
+.level-progress progress::-webkit-progress-value {
+  background: var(--accent);
+  border-radius: 10px;
+}
+.level-progress progress::-moz-progress-bar {
+  background: var(--accent);
+  border-radius: 10px;
+}
+.level-progress p {
+  font-size: 11px;
+  color: var(--muted);
+}
+.level-progress p span {
+  margin: 0 7px;
+}
+.progress-figures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 22px 0;
+  margin: 0 0 26px;
+  border-bottom: 1px solid var(--border);
+  gap: 20px;
+}
+.progress-figures dt {
+  color: var(--muted);
+  font-size: 11px;
+}
+.progress-figures dd {
+  font-size: 28px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.6;
+}
+.progress-figures dd span {
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--muted);
+}
+.progress-figures p {
+  font-size: 10px;
+  color: var(--muted);
+}
+.progress-figures a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.progress-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+.progress-workspace .section-heading {
+  margin-bottom: 16px;
+}
+.progress-workspace .section-heading h2,
+.dashboard-roadmap h2 {
+  font-size: 16px;
+}
+.progress-workspace .section-heading p {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 5px;
+}
+.topic-progress,
+.progress-side {
+  min-width: 0;
+}
+.topic-progress-scroll {
+  overflow-x: auto;
+  border-block: 1px solid var(--border);
+}
+.topic-progress table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+.topic-progress thead th {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 10px 5px;
+}
+.topic-progress tbody tr {
+  border-top: 1px solid var(--border);
+}
+.topic-progress tbody th {
+  font-weight: 650;
+  min-width: 185px;
+  padding: 16px 5px 16px 0;
+}
+.topic-progress td {
+  padding: 10px 5px;
+  font-variant-numeric: tabular-nums;
+}
+.topic-progress td:not(:first-child),
+.topic-progress th:not(:first-child) {
+  text-align: right;
+  white-space: nowrap;
+}
+.topic-progress th a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topic-progress th a > svg {
+  flex-shrink: 0;
+  margin-left: auto;
+  color: var(--muted);
+}
+.topic-index {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.read-complete {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+}
+.stat-denominator {
+  color: var(--muted);
+  font-size: 10px;
+}
+.topic-progress td strong {
+  font-weight: 650;
+}
+.topic-progress td small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+}
+.progress-method {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+.progress-review-link {
+  font-size: 11px;
+}
+.progress-side {
+  display: grid;
+  gap: 18px;
+}
+.revisit-card {
+  border-radius: 14px;
+  padding: 19px 21px;
+  background: var(--mint);
+}
+.revisit-card .section-heading {
+  margin-bottom: 10px;
+}
+.revisit-card .section-heading > svg {
+  color: var(--accent);
+}
+.revisit-card ul {
+  list-style: none;
+  padding: 0;
+}
+.revisit-card li + li {
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.revisit-card li a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 10px;
+}
+.revisit-card strong {
+  font-size: 12px;
+}
+.revisit-card li a > span {
+  grid-row: 2;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.revisit-card li svg {
+  grid-row: 1 / 3;
+  grid-column: 2;
+  align-self: center;
+}
+.revisit-empty p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.revisit-empty > span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 6px;
+}
+.study-week .section-heading {
+  margin-bottom: 12px;
+}
+.study-week ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  padding: 0;
+  gap: 7px;
+}
+.study-week li {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  font-size: 9px;
+  color: var(--muted);
+}
+.day-mark {
+  width: 100%;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.day-mark > span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.4;
+}
+.day-mark.studied {
+  color: var(--accent);
+  background: var(--lavender);
+  border-color: transparent;
+}
+.study-week > p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.keepsakes {
+  border-block: 1px solid var(--border);
+  scroll-margin-top: 20px;
+}
+.keepsakes summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  padding: 16px 0;
+  list-style: none;
+}
+.keepsakes summary::-webkit-details-marker {
+  display: none;
+}
+.keepsakes summary > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.keepsakes summary strong {
+  font-size: 12px;
+  color: var(--ink);
+}
+.keepsakes[open] summary > span:last-child > svg {
+  transform: rotate(90deg);
+}
+.badge-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 4px 0 20px;
+}
+.badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--muted);
+}
+.badge > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.badge h3 {
+  font-size: 11px;
+}
+.badge p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+.badge div > span {
+  display: block;
+  font-size: 9px;
+  margin-top: 4px;
+}
+.badge.earned {
+  color: var(--ink);
+}
+.badge.earned > svg,
+.badge.earned div > span {
+  color: var(--accent);
+}
+.dashboard-roadmap {
+  margin-top: 33px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+.dashboard-roadmap .section-heading p {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 4px;
+}
+.dashboard-roadmap ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.dashboard-roadmap li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.dashboard-roadmap .journey-node {
+  height: 29px;
+  width: 29px;
+  min-width: 29px;
+  font-size: 11px;
+}
+.dashboard-roadmap h3 {
+  font-size: 11px;
+  line-height: 1.5;
+}
+.dashboard-roadmap li p {
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.progress-rules {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  line-height: 1.8;
+}
+.progress-rules summary {
+  cursor: pointer;
+}
+.progress-rules p {
+  max-width: 800px;
+  margin-top: 10px;
+}
+.progress-rules a {
+  text-decoration: underline;
+}
+.progress-storage {
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+@media (max-width: 1200px) {
+  .progress-workspace {
+    gap: 24px;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  }
+  .progress-welcome .welcome-copy h2 {
+    font-size: 25px;
+  }
+  .dashboard-roadmap ol {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 22px;
+  }
+}
+@media (max-width: 780px) {
+  .progress-workspace {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .progress-side {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .keepsakes {
+    grid-column: 1 / -1;
+  }
+  .progress-figures {
+    gap: 14px;
+  }
+  .progress-figures dd {
+    font-size: 25px;
+  }
+  .progress-figures dd span {
+    font-size: 10px;
+  }
+  .progress-figures p {
+    line-height: 1.6;
+  }
+}
+@media (max-width: 540px) {
+  .progress-home .progress-welcome {
+    display: block;
+    padding: 23px 21px;
+    min-height: 0;
+  }
+  .progress-welcome .table-garden {
+    display: none;
+  }
+  .progress-welcome .welcome-copy h2 {
+    font-size: 26px;
+  }
+  .progress-welcome .welcome-copy > p {
+    font-size: 12px;
+  }
+  .progress-welcome .welcome-copy .button {
+    font-size: 11px;
+    width: 100%;
+  }
+  .level-progress p {
+    font-size: 10px;
+  }
+  .progress-figures {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 22px;
+    margin-bottom: 24px;
+    padding: 19px 0;
+  }
+  .progress-side {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+  .topic-progress table {
+    font-size: 11px;
+  }
+  .topic-progress tbody th {
+    min-width: 150px;
+  }
+  .topic-progress th a {
+    gap: 7px;
+  }
+  .topic-progress th a > svg {
+    display: none;
+  }
+  .topic-progress td,
+  .topic-progress thead th {
+    padding-inline: 4px;
+  }
+  .dashboard-roadmap ol {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  .dashboard-roadmap li a {
+    align-items: center;
+  }
+  .dashboard-roadmap h3 {
+    font-size: 12px;
+  }
+  .dashboard-roadmap .section-heading {
+    gap: 12px;
+  }
+  .dashboard-roadmap .text-link {
+    font-size: 10px;
+  }
+}
